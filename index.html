@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario con JavaScript</title>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+</head>
+<body onload="load_page()">
+    
+
+<h2>INTERFAZ</h2>
+
+<form id="miFormulario" onsubmit="return validarFormulario()">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <span id="errorNombre" class="error"></span>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="errorEmail" class="error"></span>
+    </div>
+    <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <span id="errorPassword" class="error"></span>
+    </div>
+    <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <span id="errorMensaje" class="error"></span>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="limpiar()">limpiar</button>
+    </div>
+</form>
+
+<script src="js/formulario.js"></script>
+
+<script>
+    function limpiar() {
+        alert("Función de búsqueda aún no implementada.");
+    }
+</script>
+
+</body>
+</html>
